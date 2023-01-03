@@ -8,7 +8,7 @@ const { userModel } = require('../../database/app')
 var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-// 查询
+// 全部查询
 router.get('/', async (req: any, res: any) => {
     const users = await userModel.findAll();
     res.send({
