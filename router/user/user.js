@@ -42,7 +42,7 @@ var userModel = require('../../database/app').userModel;
 // 解析以 application/json 和 application/x-www-form-urlencoded 提交的数据
 var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-// 查询
+// 全部查询
 router.get('/', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
     var users;
     return __generator(this, function (_a) {

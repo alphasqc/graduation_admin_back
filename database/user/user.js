@@ -50,6 +50,6 @@ module.exports = function (sequelize, DataTypes) {
         createdAt: 'createTime',
         updatedAt: 'updateTime'
     });
-    User.sync({ force: true });
+    User.sync({ force: false });
     return User;
 };

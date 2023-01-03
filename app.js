@@ -54,7 +54,7 @@ app.get('/', function (req, res) { return __awaiter(_this, void 0, void 0, funct
         switch (_a.label) {
             case 0: 
             // 同步所有模型
-            return [4 /*yield*/, sequelize.sync({ force: true })];
+            return [4 /*yield*/, sequelize.sync({ force: false })];
             case 1:
                 // 同步所有模型
                 _a.sent();
